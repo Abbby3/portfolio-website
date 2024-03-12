@@ -3,7 +3,7 @@
 ## Features added:
 
 - 0.0.1: opened git repo, initial file setup and readme
-- 0.1.0: setup html, css files
+- 0.1.0: setup html, scss/css files
 
 ## Features to add:
 
