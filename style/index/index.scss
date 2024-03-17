@@ -37,13 +37,43 @@
 }
 .about {
   &-info {
-    & h2 {
+    &__title {
       margin: 15px;
       width: 90%;
-      text-align: left;
+      // text-align: center;
     }
-    & p {
+    &__desc {
       margin: 15px;
+    }
+  }
+  &-skills {
+    &__title {
+      margin: 15px;
+      width: 90%;
+      // text-align: center;
+    }
+    &-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &-list {
+        display: flex;
+        margin: 15px;
+        align-items: end;
+
+        &__item {
+          text-align: center;
+          & img {
+            height: 50px;
+          }
+          & p {
+            width: max-content;
+          }
+        }
+      }
+      &-real {
+      }
     }
   }
 }
@@ -58,7 +88,6 @@
       margin-right: 1vw;
     }
     &-info__title {
-      margin: 15px;
       font-size: 2vw;
     }
     &-info__desc {
