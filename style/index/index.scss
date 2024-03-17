@@ -40,7 +40,6 @@
     &__title {
       margin: 15px;
       width: 90%;
-      // text-align: center;
     }
     &__desc {
       margin: 15px;
@@ -50,29 +49,25 @@
     &__title {
       margin: 15px;
       width: 90%;
-      // text-align: center;
     }
     &-box {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       &-list {
         display: flex;
+        flex-wrap: wrap;
         margin: 15px;
-        align-items: end;
-
         &__item {
           text-align: center;
+          margin: 5px;
           & img {
             height: 50px;
-          }
-          & p {
-            width: max-content;
           }
         }
       }
       &-real {
+        margin-left: 15px;
       }
     }
   }
@@ -82,7 +77,12 @@
   .about {
     display: flex;
     justify-content: center;
-    & div {
+    &-info {
+      width: 37.3vw;
+      margin-left: 1vw;
+      margin-right: 1vw;
+    }
+    &-skills {
       width: 37.3vw;
       margin-left: 1vw;
       margin-right: 1vw;
@@ -99,17 +99,21 @@
 }
 @media only screen and (min-width: 450px) and (max-width: 999px) {
   .about {
-    & div {
+    &-skills {
       height: 300px;
     }
     &-info {
       margin-bottom: 20px;
+      height: 300px;
     }
   }
 }
 @media only screen and (max-width: 449px) {
   .about {
-    & div {
+    &-info {
+      height: 750px;
+    }
+    &-skills {
       height: 750px;
     }
     &-info {

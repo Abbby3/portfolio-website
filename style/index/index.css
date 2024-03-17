@@ -59,29 +59,35 @@
 .about-skills-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .about-skills-box-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 15px;
-  align-items: end;
 }
 .about-skills-box-list__item {
   text-align: center;
+  margin: 5px;
 }
 .about-skills-box-list__item img {
   height: 50px;
 }
-.about-skills-box-list__item p {
-  width: max-content;
+.about-skills-box-real {
+  margin-left: 15px;
 }
+
 @media only screen and (min-width: 1000px) {
   .about {
     display: flex;
     justify-content: center;
   }
-  .about div {
+  .about-info {
+    width: 37.3vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  .about-skills {
     width: 37.3vw;
     margin-left: 1vw;
     margin-right: 1vw;
@@ -96,15 +102,19 @@
   }
 }
 @media only screen and (min-width: 450px) and (max-width: 999px) {
-  .about div {
+  .about-skills {
     height: 300px;
   }
   .about-info {
     margin-bottom: 20px;
+    height: 300px;
   }
 }
 @media only screen and (max-width: 449px) {
-  .about div {
+  .about-info {
+    height: 750px;
+  }
+  .about-skills {
     height: 750px;
   }
   .about-info {
