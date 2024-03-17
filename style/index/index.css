@@ -1,3 +1,148 @@
+.home-card {
+  flex-direction: row;
+  justify-content: right;
+  gap: 5%;
+  text-align: right;
+}
+@media only screen and (max-width: 500px) {
+  .home-card {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+.home-card h1 {
+  font-size: 5vw;
+}
+@media only screen and (max-width: 650px) {
+  .home-card h1 {
+    font-size: 2em;
+  }
+}
+.home-card p {
+  font-size: 2vw;
+}
+@media only screen and (max-width: 650px) {
+  .home-card p {
+    font-size: 0.8em;
+  }
+}
+.home-card__portrait {
+  width: 15vw;
+  margin-right: 20px;
+  border: 0.4vw solid #9f526e;
+  border-radius: 500px;
+  background-color: #9f526e;
+}
+@media only screen and (max-width: 650px) {
+  .home-card__portrait {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home-card__portrait {
+    margin: 0px;
+  }
+}
 
+.about-info__title {
+  margin: 15px;
+  width: 90%;
+}
+.about-info__desc {
+  margin: 15px;
+}
+.about-skills__title {
+  margin: 15px;
+  width: 90%;
+}
+.about-skills-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-skills-box-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+.about-skills-box-list__item {
+  text-align: center;
+  margin: 5px;
+}
+.about-skills-box-list__item img {
+  height: 50px;
+}
+.about-skills-box-real {
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .about {
+    display: flex;
+    justify-content: center;
+  }
+  .about-info {
+    width: 37.3vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  .about-skills {
+    width: 37.3vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+  .about-info__title {
+    font-size: 2vw;
+  }
+  .about-info__desc {
+    margin: 15px;
+    text-align: left;
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (min-width: 450px) and (max-width: 999px) {
+  .about-skills {
+    height: 300px;
+  }
+  .about-info {
+    margin-bottom: 20px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 449px) {
+  .about-info {
+    height: 750px;
+  }
+  .about-skills {
+    height: 750px;
+  }
+  .about-info {
+    margin-bottom: 20px;
+  }
+}
+.contact__title {
+  margin-bottom: 25px;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+}
+.contact-links__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+}
+.contact-links__item img {
+  width: 50px;
+  margin: 15px;
+}
+.contact-links__item p {
+  color: black;
+}
+.contact-links__item p:hover {
+  color: #304674;
+}
 
 /*# sourceMappingURL=index.css.map */

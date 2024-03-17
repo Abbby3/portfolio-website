@@ -1,0 +1,57 @@
+.cafe {
+  &__link img {
+    width: 50px;
+    margin: 15px;
+  }
+  & div {
+    margin: 15px;
+  }
+}
+
+.portfolio {
+  &__link img {
+    width: 50px;
+    margin: 15px;
+  }
+  & div {
+    margin: 15px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .cafe {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cafe {
+    height: 150vh;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .cafe {
+    height: 200vh;
+  }
+}
+@media only screen and (max-width: 265px) {
+  .cafe {
+    height: 270vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .portfolio {
+    height: 120vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .portfolio {
+    height: 170vh;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .portfolio {
+    height: 275vh;
+  }
+}

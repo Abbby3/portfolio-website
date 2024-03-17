@@ -1,3 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+  scroll-behavior: smooth;
+  font-family: "Madimi One", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
 
+.nav {
+  font-size: 4vw;
+  border: 2px solid #304674;
+  padding: 15px;
+  background-color: #ecbdc4;
+  display: flex;
+  gap: 20px;
+  justify-content: right;
+  position: fixed;
+  width: calc(100% - 34px);
+  z-index: 2;
+}
+.nav__link {
+  text-decoration: none;
+}
+.nav__link p {
+  color: black;
+}
+.nav__link p:hover {
+  color: #304674;
+}
+@media only screen and (min-width: 600px) {
+  .nav {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .nav {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .nav {
+    gap: 0px;
+    justify-content: space-around;
+  }
+}
+
+.background--fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.card--blue {
+  border: 1vw double #9f526e;
+  border-radius: 40px;
+  background-color: #d8e1e8;
+  color: #9f526e;
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 15px;
+  height: 80vh;
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card--pink {
+  border: 1vw double #304674;
+  border-radius: 40px;
+  background-color: #f5dce0;
+  color: #304674;
+  width: 80vw;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 15px;
+  height: 80vh;
+  position: relative;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  border: 2px solid #9f526e;
+  padding: 15px;
+  background-color: #b2cbde;
+  color: #9f526e;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: relative;
+  top: 50px;
+}
+.footer-box {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-box__portrait {
+  width: 70px;
+}
+.footer-box-nav {
+  margin-left: 20px;
+  font-size: 1.1em;
+}
+.footer-box-nav__item a {
+  text-decoration: none;
+}
+.footer-box-nav__item p {
+  color: black;
+}
+.footer-box-nav__item p:hover {
+  color: #9f526e;
+}
+.footer-box-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-box-contact-item__link {
+  width: 40px;
+}
+.footer__copyright {
+  align-self: flex-end;
+  font-size: 0.8em;
+}
 
 /*# sourceMappingURL=global.css.map */
