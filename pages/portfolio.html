@@ -8,9 +8,139 @@
     <link rel="stylesheet" href="../style/portfolio/portfolio.css" />
   </head>
   <body>
-    <nav></nav>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!-- Navbar -->
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item">
+          <a href="./index.html"><p>Home</p></a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./index.html#about"><p>About</p></a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./index.html#contact"><p>Contact</p></a>
+        </li>
+        <li class="nav-list__item">
+          <a href="./portfolio.html"><p>Portfolio</p></a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header">
+      <img class="header__background" src="../assets/sky.jpg" alt="sky background" />
+      <h1 class="header__title">My Portfolio</h1>
+    </header>
+
+    <main>
+      <section class="cafe">
+        <h2 class="cafe__title">Cafe Website</h2>
+        <a class="cafe__link" href="https://github.com/Abbby3/cafe-website" target="_blank">
+          <img src="../assets/github.png" alt="github icon" />
+        </a>
+        <p class="cafe__desc">
+          This was my first project after being accepted into the Nology course. It is a mockup of a
+          cafe website that was made to test our knowledge of HTML and CSS fundamentals, as well as
+          some Javascript
+        </p>
+
+        <div class="cafe__design">
+          <h3>Design</h3>
+          <p>
+            The design is a parody of sorts, using names in other languages and exorbitant price.
+            The colour scheme uses a simple coffee palette and features a gif of cafe-related stock
+            footage.
+          </p>
+        </div>
+
+        <div class="cafe__features">
+          <h3 class="cafe__subtitle">Features</h3>
+          <p class="cafe__desc">
+            The project was specified to include the following features. A HTML website with 2
+            seperate home and contact pages, both with a functional navigation bar and simple
+            styling using CSS. A gallery on the home page in a 3 column grid. A form on the contact
+            page using different required inputs on a CSS grid, that uses Javascript to store
+            submitted inputs in the session storage. These inputs are displayed on a HTML element on
+            the page, which can clear the messages both on the page, and within the session storage.
+          </p>
+        </div>
+
+        <div class="cafe__updates">
+          <h3>Updates</h3>
+          <p>
+            As my first application of web development, the site has a number of issues that would
+            need to be resolved in future iterations. Examples of these changes include an updated
+            file structure, a BEM based naming convention. The code should be widely updated to
+            improve optimisation, readability and accessibility. The gif should ideally be of higher
+            resolution, as the project was submitted through email at the time, which diminished the
+            file size. Potentally, the design should be improved, and the messages on the contact
+            page should be removed to align closer to a real cafe website, if the project were to
+            move outside the intended scope, or be uploaded to a live release.
+          </p>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <h2 class="portfolio__title">Portfolio Website</h2>
+        <a class="portfolio__link" href="https://github.com/Abbby3/portfolio-website" target="_blank">
+          <img src="../assets/github.png" alt="github icon" />
+        </a>
+        <p class="porfolio__desc">
+          This project is the website you're on! It was my second project at Nology, and is used
+          both to revise our knowledge thus far on HTML and SCSS, and as a platform for colleagues
+          or employers to learn about my professional capabilities. I intend on regularly
+          maintaining a live release of this website going forward, and using it as a blog or second
+          resume of sorts.
+        </p>
+        <div class="portfolio__design">
+          <h3>Design</h3>
+          <p>
+            This website uses a simple icons, and a pink and blue colour scheme. The home page is
+            simple and consise, in order for it to be understood at only a glance. The portfolio
+            page delves into more information, so that users looking to view my work can read about
+            it. Each section is held in a card to be recognisably distinct from each other.
+          </p>
+        </div>
+        <div class="portfolio__features">
+          <h3>Features</h3>
+          <p>
+            The features largely expand upon my previous project. For example, it uses flexbox
+            rather than grids for a mobile first design, using BEM, and an improved file structure
+            to name a few. The project specifications were overall less restrictive than the last, as
+            this was to show our knowledge of the course material, rather than teach the basics. However, the website was required to have landing, about, skills, portfolio and contact sections. It was also specified to use SCSS for styling, a BEM naming convention, and media queries to ensure the UI on mobile screens was up to standard.
+          </p>
+        </div>
+        <div class="portfolio__updates">
+          <h3>Updates</h3>
+          <p>This project is not on a live release as of the first version, which would be changed on future updates. Next iterations of the website should include various features such as a form and browser based email contact options, filters on the portfolio page, and live releases for other projects with comparisons to the first version. More features will be added as I learn and improve, and future projects will be uploaded to this website over time.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img class="footer__portrait" src="../assets/me-portrait.png" alt="my portrait" />
+
+      <div class="footer-nav">
+        <a class="footer-nav__item" href="#home"><p>Home</p></a>
+        <a class="footer-nav__item" href="#about"><p>About</p></a>
+        <a class="footer-nav__item" href="#contact"><p>Contact</p></a>
+        <a class="footer-nav__item" href="./portfolio.html"><p>Portfolio</p></a>
+      </div>
+
+      <div class="footer-contact">
+        <a class="footer-contact__item" href="mailto:ihfmx3@outlook.com">
+          <img src="../assets/email.png" alt="email icon" />
+        </a>
+        <a class="footer-contact__item" href="../assets/placeholder-resume.pdf">
+          <img src="../assets/resume.png" alt="resume icon" />
+        </a>
+        <a class="footer-contact__item" href="https://github.com/Abbby3">
+          <img src="../assets/github.png" alt="github icon" />
+        </a>
+        <a class="footer-contact__item" href="www.linkedin.com/in/abigail3">
+          <img src="../assets/linkedin.png" alt="linkedin icon" />
+        </a>
+      </div>
+      <p class="footer__copyright">Copyright 2024 Abigail Lawrence</p>
+    </footer>
   </body>
 </html>
