@@ -31,6 +31,7 @@ const Portfolio = () => {
         const moreData = repoData.map(async (repo: Repository) => {
           const readme = await fetchRepositoryReadme(repo.name);
           const uiImage = await fetchRepositoryUI(repo.name);
+          console.log(uiImage);
           repo.name = repo.name
             .replace("-", " ")
             .split(" ")
