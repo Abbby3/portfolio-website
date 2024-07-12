@@ -1,33 +1,59 @@
-## This website is for employers or peers to look over my projects, resume, etc, and to provide a means of contacting me.
+# Portfolio Website
 
-## Features:
+===========
 
-- compatibility with screens from 210px to 3000px wide
-- functional icon links, including mailto and pdf download
-- comprehensive BEM convention
-- home and portfolio page
-  - home page has landing, about, and contact sections
-  - navbar that stays on viewport
-    - scrolling to buttons without dedicated page
+## Demo
 
-## Features to add:
+[Portfolio page](https://abbby3.github.io/)
 
-- live release
-- updated BEM
-- scss variables to keep DRY
-- various gifs for projects and about sections
-- dedicated thematic icons, including navbar home button
-- navbar dropdown for mobile
-- choice of form or email for contact page
+## Description
 
-  - form option that sends me an email
-  - email option that sends redirects user to new email page for user's choice of email platform rather than out of browser app
+This project is a personal portfolio website to showcase my skills and projects, and to provide a means of contacting me.
 
-- portfolio page
-  - filters
-    - by time created
-    - by project
-    - by latest release of each project
-  - updated precourse cafe project
-  - links to live release of projects
-  - misc tech demos
+### Tech Stack
+
+- Vite React
+- Typescript
+- SCSS
+
+## Build Steps
+
+1.  Clone the repository.
+
+```shell
+git clone https://github.com/Abbby3/portfolio-website
+```
+
+2.  Navigate to the project directory.
+
+```shell
+cd portfolio-website
+```
+
+3.  Install dependencies.
+
+```shell
+npm install
+```
+
+4.  Copy the .env file and set the github access token if one is available.
+
+```shell
+cp .env.example .env
+```
+
+5.  Start the development server.
+
+```shell
+npm run dev
+```
+
+## Changelog
+
+### 2.0
+
+- Rebuilt in Vite React.
+- Converted to Typescript
+- Updated UI.
+- Updated information on home page.
+- Added github API to portfolio page for automatic project listing.

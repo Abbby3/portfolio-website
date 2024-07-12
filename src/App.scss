@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+  scroll-behavior: smooth;
+  font-family: "Madimi One", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+  -webkit-text-stroke: 0.5px black;
+  & a {
+    text-decoration-color: white;
+    -webkit-text-stroke-width: 1px;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: lightgrey;
+      text-decoration-color: lightgrey;
+    }
+    &:active {
+      color: gray;
+      text-decoration-color: gray;
+    }
+  }
+}
+.app {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+}

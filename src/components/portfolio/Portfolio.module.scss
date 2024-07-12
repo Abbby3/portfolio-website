@@ -1,0 +1,89 @@
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-height: 100vh;
+  width: 100vw;
+  padding-top: 250px;
+  padding-bottom: 25px;
+}
+li {
+  border: 15px double white;
+  border-radius: 50px;
+  height: 380px;
+  width: 380px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  transition: all 0.15s;
+  & h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  & a {
+    font-size: 30px;
+    text-align: center;
+  }
+  & p {
+    font-size: 25px;
+    text-align: center;
+  }
+  & pre {
+    font-size: 20px;
+    text-wrap: wrap;
+  }
+  &:nth-of-type(odd) {
+    background-color: #5bcefa;
+  }
+  &:nth-of-type(even) {
+    background-color: #f5a9b8;
+  }
+}
+.hoverable {
+  &:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+  }
+}
+.selected {
+  width: 785px;
+  height: 785px;
+  justify-content: space-between;
+}
+.shortDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  width: 335px;
+  height: 705px;
+  max-height: 100%;
+
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+}
+.ui {
+  width: 335px;
+  height: 335px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.readme {
+  overflow-y: scroll;
+  width: 335px;
+  height: 705px;
+  padding: 10px;
+}
